@@ -1,0 +1,162 @@
+.canvas-btn {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 0px 10px;
+  font-weight: bold;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+}
+
+button:active {
+  background-color: #ddd;
+  transform: scale(0.98);
+}
+
+/* Input Styles */
+input[type="color"] {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 150px;
+  margin-left: 10px;
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  width: 200px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .canvas-btn {
+    flex-direction: column;
+  }
+
+  button,
+  input[type="color"],
+  input[type="range"],
+  input[type="text"] {
+    margin: 5px 0;
+  }
+}
+
+/* table css */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.plus-icon {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.table-container {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.serial-column {
+  width: 100px;
+  text-align: left;
+}
+
+.action-column {
+  text-align: right;
+}
+
+.action-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
