@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Base URL
-const API_URL = "http://localhost:3000/api/v1";
+const API_URL = "https://mern-interview-test-backend.onrender.com/api/v1";
 
 // Create a new item
 const createBoard = async (itemData) => {
